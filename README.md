@@ -90,3 +90,7 @@ Haikunator is also available in other languages. Check them out:
 - Perl: https://github.com/Atrox/haikunatorperl
 - Dart: https://github.com/Atrox/haikunatordart
 - Ruby: https://github.com/usmanbashir/haikunator
+
+## Attributions
+
+Scientists names and links are courtesy of the Docker project. Apache-2.0.
