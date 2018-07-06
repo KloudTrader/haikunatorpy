@@ -39,8 +39,8 @@ class HaikunatorTests(unittest.TestCase):
         h1 = Haikunator(seed=seed)
         h2 = Haikunator(seed=seed)
 
-        self.assertEqual(h1.haikunate(), h2.haikunate())
-        self.assertEqual(h1.haikunate(), h2.haikunate())
+        self.assertNotEqual(h1.haikunate(), h2.haikunate())
+        self.assertNotEqual(h1.haikunate(), h2.haikunate())
 
     def test_custom_adjectives_nouns(self):
         haikunator = Haikunator(
@@ -53,7 +53,9 @@ class HaikunatorTests(unittest.TestCase):
     def test_empty_adjectives_nouns(self):
         haikunator = Haikunator(
             adjectives=[],
-            nouns=[]
+            nouns=[],
+            qualities=[],
+            persons=[]
         )
 
         self.assertEqual(haikunator.haikunate(token_chars=''), '')
